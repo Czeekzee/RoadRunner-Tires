@@ -1,0 +1,132 @@
+.info-section {
+  background: #fbe265;
+  color: black;
+  padding: 3rem calc((100vw - 1300px) / 2);
+  text-align: center;
+}
+
+.info-section h2 {
+  font-size: 2.5rem; 
+  margin-bottom: 1rem; 
+  font-weight: bold; 
+}
+
+.info-section p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+.info-section ul {
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0; 
+}
+
+.info-section li {
+  font-size: 1.5rem; 
+  line-height: 1.5; 
+  margin-bottom: 0.5rem; 
+}
+
+.info-section {
+  background: #fbe265; 
+  color: black;
+  padding: 2rem calc((100vw - 1300px) / 2);
+  text-align: center; 
+  height: 100vh; 
+  display: flex; 
+  flex-direction: column;
+  justify-content: center; 
+}
+
+.info-section h2 {
+  font-size: 2.5rem; 
+  margin-bottom: 1rem; 
+  font-weight: bold; 
+}
+
+.info-section p,
+.info-section ul {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+.info-section {
+  background: #fbe265; 
+  color: black; 
+  padding: 0; 
+  text-align: center;
+  height: 100vh; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  padding-top: 80px; 
+}
+
+.App {
+  padding-top: 0px;
+}
+
+body, html {
+  margin: 0;
+  padding: 0; 
+  overflow-x: hidden; 
+}
+
+/* For tablets or phones */
+@media screen and (max-width: 768px) {
+  .App {
+    padding: 0; 
+  }
+
+  .hero-container {
+    grid-template-columns: 1fr; /* Stack columns vertically */
+    height: auto; /* Allow content to grow in height */
+    padding: 2rem 1rem; /* Adjust padding */
+  }
+
+  .column-left {
+    text-align: center; /* Center-align text */
+    padding: 1rem 0;
+  }
+
+  .column-left h1 {
+    font-size: 2rem; /* Reduce font size */
+  }
+
+  .column-left p {
+    font-size: 1.2rem; /* Reduce text size */
+  }
+
+  .hero-image {
+    width: 80%; /* Adjust image size */
+    height: auto;
+  }
+
+  nav {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  nav a {
+    padding: 1rem 0;
+  }
+
+  /* Adjust services and contact sections */
+  .info-section {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .info-section h2 {
+    font-size: 2rem;
+  }
+
+  .info-section p {
+    font-size: 1.2rem;
+  }
+}

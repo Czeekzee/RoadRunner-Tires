@@ -1,0 +1,72 @@
+nav {
+  height: 80px;
+  background: #fbe265;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  color: black;
+  font-size: 3.5rem;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 20%; /* Adjust this value for more space between items */
+  transition: max-height 0.3s ease; 
+}
+
+.nav-items.open {
+  display: flex; /* Show items when open */
+}
+
+.nav-items a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+  padding: 0 1rem;
+}
+
+/* Hamburger menu */
+.hamburger {
+  display: none; /* Hidden by default */
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Adjust for smaller devices */
+@media screen and (max-width: 768px) {
+  .nav-items {
+    display: none; /* Hide nav items by default */
+    flex-direction: column; /* Stack items vertically */
+    width: 100%; /* Full width for mobile */
+    position: absolute; /* Absolute positioning */
+    top: 80px; /* Below the navbar */
+    left: 0; /* Align to the left */
+    background: #fbe265; /* Background color */
+  }
+
+  .nav-items.open {
+    display: flex; /* Show items when open */
+  }
+
+  .hamburger {
+    display: block; /* Show hamburger icon on small screens */
+  }
+
+  .logo {
+    font-size: 2.5rem; 
+  }
+}
